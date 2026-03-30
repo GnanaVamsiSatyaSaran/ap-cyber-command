@@ -21,8 +21,8 @@ if not st.session_state['authenticated']:
         """, unsafe_allow_html=True)
         
         with st.form("login"):
-            user = st.text_input("Personnel ID", placeholder="admin")
-            pwd = st.text_input("Clearance Code", type="password", placeholder="admin")
+            user = st.text_input("Personnel ID", placeholder="bhaskar122")
+            pwd = st.text_input("Clearance Code", type="password", placeholder="3327")
             st.markdown("<br>", unsafe_allow_html=True)
             if st.form_submit_button("INITIATE SECURE UPLINK", use_container_width=True):
                 if user == 'admin' and pwd == 'admin':
